@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="411.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@styles.css" fx:controller="controllers.MechanicHomeController">
+    <children>
+        <Button fx:id="serviceScheduleButton" layoutX="153.0" layoutY="167.0" mnemonicParsing="false" text="Service Schedule" onAction="#handleServiceSchedule" />
+        <Button fx:id="addServicesButton" layoutX="164.0" layoutY="229.0" mnemonicParsing="false" text="Add Services" onAction="#handleAddServices" />
+        <Button fx:id="editServicesButton" layoutX="165.0" layoutY="110.0" mnemonicParsing="false" text="Edit Services" onAction="#handleEditServices" />
+        <Button fx:id="viewAllServicesButton" layoutX="150.0" layoutY="290.0" mnemonicParsing="false" text="View All Services" onAction="#handleViewAllServices" />
+        <Button fx:id="logoutButton" layoutX="180.0" layoutY="350.0" mnemonicParsing="false" text="Logout" onAction="#handleLogout" />
+        <Text layoutX="92.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mechanic Homepage">
+            <font>
+                <Font name="Agency FB" size="34.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

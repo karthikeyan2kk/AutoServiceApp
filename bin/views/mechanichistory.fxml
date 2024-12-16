@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="874.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MechanicHistoryController">
+    <children>
+        <VBox alignment="CENTER" layoutX="20.0" layoutY="20.0">
+            <children>
+                <Text text="Service History" wrappingWidth="435.0">
+                    <font>
+                        <Font name="Agency FB" size="24.0" />
+                    </font>
+                </Text>
+                <TableView fx:id="tableView" prefHeight="247.0" prefWidth="850.0">
+                    <columns>
+                        <TableColumn fx:id="serviceidColumn" prefWidth="90.0" text="Service ID" />
+                        <TableColumn fx:id="carModelColumn" prefWidth="150.0" text="Car Model" />
+                        <TableColumn fx:id="serviceColumn" prefWidth="302.0" text="Service" />
+                        <TableColumn fx:id="priceColumn" prefWidth="70.0" text="Price" />
+                        <TableColumn fx:id="dateColumn" prefWidth="100.0" text="Date" />
+                        <TableColumn fx:id="mechanicNameColumn" prefWidth="120.0" text="Mechanic Name" />
+                    </columns>
+                </TableView>
+                <HBox alignment="CENTER" spacing="10">
+                    <children>
+                        <Button onAction="#handleMenu" text="Menu" />
+                        <Button onAction="#handleDeleteService" text="Delete Service" />
+                        <Button onAction="#handleLogout" text="Logout" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

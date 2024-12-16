@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="890.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MechanicAllServController">
+    <children>
+        <TableView fx:id="tableView" layoutX="13.0" layoutY="170.0" prefHeight="247.0" prefWidth="859.0">
+            <columns>
+                <TableColumn fx:id="serviceColumn" prefWidth="161.60000896453857" text="Service" />
+                <TableColumn fx:id="serviceDoneColumn" prefWidth="396.8000030517578" text="Service Done" />
+                <TableColumn fx:id="mechanicNameColumn" prefWidth="119.99993896484375" text="Mechanic Name" />
+                <TableColumn fx:id="timeTakenColumn" prefWidth="99.99993896484375" text="Time Taken" />
+                <TableColumn fx:id="priceColumn" prefWidth="83.99993896484375" text="Price" />
+            </columns>
+        </TableView>
+        <Button layoutX="401.0" layoutY="453.0" mnemonicParsing="false" onAction="#handleBackToHomepage" text="Back to Menu" />
+        <Text layoutX="20.0" layoutY="57.0" strokeType="INSIDE" strokeWidth="0.0" text="View All Services" wrappingWidth="435.0">
+            <font>
+                <Font name="Agency FB" size="44.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>
